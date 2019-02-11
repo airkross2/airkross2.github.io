@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.center {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section {
+  background-color: #fab1a0;
+  height: 100vh;
+}
+
+.envelope {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: relative;
+  width: 200px;
+  height: 110px;
+  cursor: pointer;
+}
+
+.envelope__top img {
+  height: 220px;
+}
+
+.envelope__body {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+.envelope__body img {
+  height: 220px;
+}
+
+.paper {
+  background-color: rgb(243, 143, 130);
+  width: 110%;
+  height: 61px;
+  text-align: center;
+  position: absolute;
+  transform: translateY(-60px);
+  transition: 0.5s;
+  bottom: 0;
+  color: aliceblue;
+}
+
+.h1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-0%);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 325px;
+  color: white;
+  opacity: 0;
+  transition: .5s;
+}
+
+.block-center-top {
+  background-color: #fff;
+  height: 200px;
+  width: 100%;
+}
+
+.bg {
+  background-color: #f89b86;
+  padding: 0;
+  margin: 0;
+}
+
+
+.bg-img{
+  background: url(../img/28.jpg) no-repeat;
+  background-position: right;
+  background-size: 380px;
+}
+
+.bg-img-main{
+  background-image: url(../img/8.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 380px;
+}
+
+.line-heaght{
+  line-height: 30px;
+}
+
+.hearht{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  text-align: center;
+  width: 100%;
+}
+
+.hearht img{
+  width: 70%;
+}
+
+.pos-rel{
+  position: relative;
+}
+
+
+.block {
+  width: 80%;
+  height: 200px;
+  background-color: #fab1a0;
+  border-radius: 8px;
+  
+}
+
+.one{
+  opacity: 0;
+  transition: all 1s ease;
+  cursor: default;
+}
+
+.two{
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: .1s;
+  cursor: default;
+}
+
+.three{
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: .3s;
+  cursor: default;
+}
+
+.four{
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: .5s;
+  cursor: default;
+}
+
+.five{
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: .7s;
+  cursor: default;
+}
+
+.six{
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: .9s;
+  cursor: default;
+}
+
+.center-block{
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center
+}
+
+.block-left {
+  overflow: hidden;
+  position: relative;
+}
+
+.block-right {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.block-left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: all .7s ease;
+}
+
+.block-right img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  transition: all .7s ease;
+}
+
+.block h1 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff200;
+  transition: all .1s ease;
+}
+
+.block:hover img {
+  transform: scale(1.1);
+  opacity: .7;
+}
+
+
+
+
+/* modals */
+.center-block{
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px solid rgb(253, 107, 107);
+}
+
+.lovely-block{
+  text-align: center;
+}
+
+.card-block-text{
+ width: 79%;
+ margin: 20px auto 0;
+}
+
+.lovely-block img{
+  width: 90wh;
+  height: 90vh;
+  box-shadow: 0px 0px 0px 7px rgb(204, 97, 156);
+}
+
+.slider-block{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: 1.5;
+  width: 100%;
+  text-align: center;
+}
+.close {
+  font-size: 2rem;
+}
+
+
+/* js classes */
+.paper_close {
+  transform: translateY(-10%);
+  height: 200px;
+}
+
+.block-show {
+  opacity: 1;
+}
+
+/* media */
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 90%;
+  }
+}
+
